@@ -42,11 +42,11 @@ public class Main {
                 break;
             case 3 :
                 System.out.println("---Example Static Method---");
-                System.out.print("Places Enter hight : ");
-                double hight = input.nextDouble();
-                System.out.print("Places Enter base : ");
-                double base = input.nextDouble();
-                System.out.println(" Triangle Area : "+triangle(hight,base));  //Static Method
+                System.out.print("Places Enter Fristname : ");
+                String FristName = input.next();
+                System.out.print("Places Enter Surname : ");
+                String SurName = input.next();
+                System.out.println(" Triangle Area : "+member(FristName,SurName));  //Static Method
                 break;
             case 4 :
                 System.out.println("---Example Constructors---");
@@ -61,7 +61,7 @@ public class Main {
                 System.out.println("Fail");
         }
     }
-    public static double triangle (double base ,double hight){
-        return (0.5*base*hight);
+    public static String member (String fname ,String Sname){
+        return fname+" "+Sname;
     }
 }
